@@ -1,0 +1,318 @@
+{
+  "definitions" : [ {
+    "@class" : "com.domo.publish.replication.content.GlobalPageDefinition",
+    "globalContentId" : "db3f120d-9d45-4605-ada7-8bba7b646dc3",
+    "sourceDomain" : "domo-labs-dev2.dev.domo.com",
+    "content" : {
+      "page" : {
+        "pageId" : 806228245,
+        "ownerId" : 1290286502,
+        "owners" : [ {
+          "id" : 1290286502,
+          "type" : "USER",
+          "displayName" : "Regression Tester"
+        } ],
+        "type" : "page",
+        "title" : "test",
+        "pageName" : "test",
+        "created" : 1600205364000,
+        "updated" : 1600205366172,
+        "locked" : false,
+        "mobileEnabled" : true,
+        "sharedViewPage" : true,
+        "virtualPage" : false,
+        "isOwner" : false
+      },
+      "pageLayout" : null,
+      "cardOrder" : [ "1294542459" ],
+      "sharedDataFileId" : null
+    },
+    "contentType" : "PAGE"
+  }, {
+    "@class" : "com.domo.publish.replication.content.GlobalCardDefinition",
+    "globalContentId" : "335f7069-729b-4d95-8cd9-308fc26a1f2b",
+    "sourceDomain" : "domo-labs-dev2.dev.domo.com",
+    "content" : {
+      "card" : {
+        "metadata" : {
+          "chartVersion" : "7",
+          "currentLabel" : "Count of Column",
+          "calendar" : "default",
+          "chartType" : "badge_vert_stackedbar",
+          "columnAliases" : "{}",
+          "columnFormats" : "{}",
+          "dataType" : "",
+          "SummaryNumberFormat" : "{\"type\":\"number\",\"format\":\"#A\"}"
+        },
+        "domoapp" : {
+          "id" : null
+        },
+        "drillContext" : [ ],
+        "drillPath" : { },
+        "drillPathURNs" : [ ],
+        "drillParents" : [ ],
+        "cardFormulas" : [ ],
+        "subscriptions" : [ {
+          "cardId" : 1294542459,
+          "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+          "dataSourceName" : "a",
+          "componentName" : "big_number",
+          "active" : true,
+          "subscription" : {
+            "name" : "big_number",
+            "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+            "columns" : [ {
+              "column" : "Column",
+              "aggregation" : "COUNT",
+              "alias" : "Count of Column",
+              "format" : {
+                "type" : "abbreviated",
+                "format" : "#",
+                "default" : false
+              }
+            } ],
+            "filters" : [ ],
+            "orderBy" : [ ],
+            "groupBy" : [ ],
+            "fiscal" : false,
+            "projection" : false,
+            "distinct" : false,
+            "limit" : 1
+          },
+          "displayType" : "domo-federateddata",
+          "dataType" : "domo-federateddata",
+          "providerType" : "domo-federateddata"
+        }, {
+          "cardId" : 1294542459,
+          "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+          "dataSourceName" : "a",
+          "componentName" : "main",
+          "active" : true,
+          "subscription" : {
+            "name" : "main",
+            "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+            "columns" : [ {
+              "column" : "a",
+              "mapping" : "ITEM"
+            }, {
+              "column" : "Column",
+              "aggregation" : "COUNT",
+              "mapping" : "VALUE"
+            } ],
+            "filters" : [ ],
+            "orderBy" : [ ],
+            "groupBy" : [ {
+              "column" : "a"
+            } ],
+            "fiscal" : false,
+            "projection" : false,
+            "distinct" : false
+          },
+          "displayType" : "domo-federateddata",
+          "dataType" : "domo-federateddata",
+          "providerType" : "domo-federateddata"
+        } ],
+        "library" : {
+          "templateId" : null,
+          "templateHash" : null,
+          "mainTemplateDataSourceIds" : [ "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa" ],
+          "mainTemplateDataSourceId" : null
+        },
+        "owner" : {
+          "displayName" : "Regression Tester",
+          "active" : true
+        },
+        "cacheInfo" : {
+          "cacheKey" : "187d49aa42c763faf1fd045d8996ee84"
+        },
+        "annotations" : [ ],
+        "slicers" : [ ],
+        "conditionalFormats" : [ ],
+        "metadataOverrides" : {
+          "components" : [ {
+            "component" : "main",
+            "chartType" : "badge_vert_stackedbar",
+            "overrides" : { },
+            "goal" : null
+          } ]
+        },
+        "pages" : [ {
+          "pageId" : 806228245,
+          "title" : "test"
+        } ],
+        "adminAllPages" : [ {
+          "pageId" : 806228245,
+          "title" : "test"
+        } ],
+        "collections" : [ ],
+        "shareRecord" : {
+          "cardId" : 1294542459,
+          "sharerId" : 1290286502,
+          "sharerDisplayName" : "Regression Tester",
+          "recipientId" : 1567606559,
+          "recipientType" : "user",
+          "message" : "I thought you might find this page interesting.",
+          "shareTime" : 1601675002
+        },
+        "ssContextFilters" : [ ],
+        "resourceAccess" : {
+          "userIds" : [ 1567606559, 1290286502 ],
+          "groupIds" : [ ]
+        },
+        "dateInfo" : { },
+        "viewInfo" : {
+          "lastViewedDate" : 1600205365854,
+          "totalViewCount" : 1
+        },
+        "extendedDateInfo" : { },
+        "datasources" : [ {
+          "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+          "dataSourceName" : "a",
+          "displayType" : "domo-federateddata",
+          "dataType" : "domo-federateddata",
+          "providerType" : "domo-federateddata",
+          "isSampleData" : false,
+          "lastUpdated" : 1600205363869
+        } ],
+        "allDatasources" : [ {
+          "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+          "dataSourceName" : "a",
+          "displayType" : "domo-federateddata",
+          "dataType" : "domo-federateddata",
+          "providerType" : "domo-federateddata",
+          "isSampleData" : false,
+          "lastUpdated" : 1600205363869
+        } ],
+        "permissionLevel" : "CAN_EDIT",
+        "certification" : {
+          "state" : "NOT_CERTIFIED"
+        },
+        "urn" : "1294542459",
+        "id" : 1294542459,
+        "type" : "kpi",
+        "created" : 1600205365,
+        "badgeUpdated" : 1600205365000,
+        "creatorId" : 1290286502,
+        "ownerId" : 1290286502,
+        "description" : "",
+        "title" : "a",
+        "active" : true,
+        "allowTableDrill" : true,
+        "locked" : false,
+        "formulas" : {
+          "formulas" : { }
+        }
+      },
+      "kpi" : {
+        "id" : 1294542459,
+        "urn" : "1294542459",
+        "definition" : {
+          "subscriptions" : {
+            "big_number" : {
+              "name" : "big_number",
+              "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+              "columns" : [ {
+                "column" : "Column",
+                "aggregation" : "COUNT",
+                "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+                "alias" : "Count of Column",
+                "format" : {
+                  "type" : "abbreviated",
+                  "format" : "#",
+                  "default" : false
+                }
+              } ],
+              "filters" : [ ],
+              "orderBy" : [ ],
+              "groupBy" : [ ],
+              "fiscal" : false,
+              "projection" : false,
+              "distinct" : false,
+              "limit" : 1
+            },
+            "main" : {
+              "name" : "main",
+              "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+              "columns" : [ {
+                "column" : "a",
+                "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+                "mapping" : "ITEM"
+              }, {
+                "column" : "Column",
+                "aggregation" : "COUNT",
+                "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+                "mapping" : "VALUE"
+              } ],
+              "filters" : [ ],
+              "orderBy" : [ ],
+              "groupBy" : [ {
+                "column" : "a",
+                "dataSourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa"
+              } ],
+              "fiscal" : false,
+              "projection" : false,
+              "distinct" : false
+            }
+          },
+          "formulas" : [ ],
+          "conditionalFormats" : [ ],
+          "annotations" : [ ],
+          "slicers" : [ ],
+          "title" : "a",
+          "description" : "",
+          "chartType" : "badge_vert_stackedbar",
+          "chartVersion" : "7",
+          "noSummary" : false,
+          "metadataOverrides" : { },
+          "allowTableDrill" : true
+        },
+        "columns" : [ {
+          "id" : "a",
+          "name" : "a",
+          "type" : "string",
+          "isCalculation" : false,
+          "isAggregatable" : true,
+          "isEncrypted" : false,
+          "hidden" : false,
+          "order" : 0,
+          "sourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa"
+        }, {
+          "id" : "Column",
+          "name" : "Column",
+          "type" : "string",
+          "isCalculation" : false,
+          "isAggregatable" : true,
+          "isEncrypted" : false,
+          "hidden" : false,
+          "order" : 0,
+          "sourceId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa"
+        } ],
+        "drillpath" : [ ],
+        "embedded" : false
+      },
+      "drillCards" : [ ]
+    }
+  } ],
+  "mapSet" : [ {
+    "globalContentId" : "db3f120d-9d45-4605-ada7-8bba7b646dc3",
+    "source" : {
+      "sourceDomain" : "domo-labs-dev2.dev.domo.com",
+      "sourceContentId" : "806228245",
+      "contentType" : "PAGE"
+    }
+  }, {
+    "globalContentId" : "335f7069-729b-4d95-8cd9-308fc26a1f2b",
+    "source" : {
+      "sourceDomain" : "domo-labs-dev2.dev.domo.com",
+      "sourceContentId" : "1294542459",
+      "contentType" : "CARD"
+    }
+  }, {
+    "globalContentId" : "9f428159-b7af-48f7-890f-fa95fe961ce5",
+    "source" : {
+      "sourceDomain" : "domo-labs-dev2.dev.domo.com",
+      "sourceContentId" : "08bfbe7c-aa43-453f-9cd0-fa20d9d544fa",
+      "contentType" : "DATASET"
+    }
+  } ]
+}
