@@ -1,0 +1,12 @@
+{
+  "packagePublicationId" : "c4ca4238a0b923820dcc509a6f75849b",
+  "domain" : "domo-labs-prod1.domo.com",
+  "definitions" : [ {
+    "id" : "f3f8878c-d70a-4815-9cc8-8f007cb81d44",
+    "publicationId" : "273314f0-a870-42cf-8d16-5aa41bd410bc",
+    "contentType" : "DATAFLOW",
+    "definition" : "{\"documentVersion\":1,\"id\":1,\"name\":\"zs ddlc\",\"databaseType\":\"ETL\",\"dapDataFlowId\":\"etl-6f1f5c55-257e-4a7f-b069-71aa6e9db26d\",\"responsibleUserId\":1940569089,\"runState\":\"ENABLED\",\"onboardFlowVersion\":{\"id\":1,\"timeStamp\":1604532010000,\"authorId\":1940569089,\"numInputs\":1,\"numOutputs\":1,\"executionCount\":0,\"executionSuccessCount\":0,\"versionNumber\":1},\"lastExecution\":{\"id\":1,\"onboardFlowId\":1,\"previewRows\":0,\"dapDataFlowExecutionId\":\"befd1a1a-cb19-44df-9e94-0c62b4117f11\",\"beginTime\":1604532012000,\"endTime\":1604532054000,\"lastUpdated\":1604532054000,\"failed\":false,\"state\":\"SUCCESS\",\"dataFlowVersion\":0},\"created\":1604532009000,\"modified\":1604532009000,\"numInputs\":1,\"numOutputs\":1,\"actions\":[{\"type\":\"LoadFromVault\",\"gui\":{\"x\":96,\"y\":204},\"name\":\"ZS Sample Sales\",\"id\":\"f49986ec-7a22-4a62-acdb-44a120af9495\",\"dataSourceId\":\"cfd4c910-6886-4b24-936d-d05798bae07f\",\"executeFlowWhenUpdated\":false,\"pseudoDataSource\":false,\"truncateTextColumns\":false,\"truncateRows\":false,\"onlyLoadNewVersions\":false,\"recentVersionCutoffMs\":0,\"removeByDefault\":false},{\"type\":\"PublishToVault\",\"gui\":{\"x\":408,\"y\":168},\"name\":\"zs output\",\"id\":\"c339d4ac-f4d5-4345-a180-7e2679bd043d\",\"dependsOn\":[\"f49986ec-7a22-4a62-acdb-44a120af9495\"],\"dataSource\":{\"guid\":\"7b4a08e5-93fc-432a-b4de-668a160cea8a\",\"type\":\"DataFlow\",\"name\":\"zs output\"},\"versionChainType\":\"REPLACE\",\"removeByDefault\":false}],\"inputs\":[{\"dataSourceId\":\"cfd4c910-6886-4b24-936d-d05798bae07f\",\"executeFlowWhenUpdated\":false,\"dataSourceName\":\"ZS Sample Sales\",\"onlyLoadNewVersions\":false,\"recentVersionCutoffMs\":0}],\"outputs\":[{\"onboardFlowId\":null,\"dataSourceId\":\"7b4a08e5-93fc-432a-b4de-668a160cea8a\",\"dataSourceName\":\"zs output\",\"versionChainType\":\"REPLACE\"}],\"executionCount\":1,\"executionSuccessCount\":1,\"hydrationState\":\"DEHYDRATED\",\"useLegacyTriggerBehavior\":false,\"passwordProtected\":false,\"deleted\":false,\"abandoned\":false,\"enabled\":true,\"restricted\":false,\"draft\":false,\"triggeredByInput\":false,\"editable\":true}",
+    "created" : 1604532123000,
+    "updated" : 1604532123000
+  } ]
+}
